@@ -17,10 +17,10 @@ CompareLength(a,b)
 # "Your first vector is longer by N elements"
 # "Your second vector is longer by N elements"
 DescribeDifference <- function (a,b)
-  if (DescribeDifference(a,b) > 0) {
-     return ("Your first vector is longer by " + CompareLength(a,b) + " elements")
+  if (length(a) > length(b)) {
+     return ("Your first vector is longer by " , CompareLength(a,b) ," elements")
   } else {
-     return ("Your second vector is longer by " + CompareLength(b,a) + " elements")  
+     return ("Your second vector is longer by " , CompareLength(b,a) , " elements")  
   }
 
 # Pass two vectors to your `DescribeDifference` function
